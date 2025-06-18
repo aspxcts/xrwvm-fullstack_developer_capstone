@@ -28,13 +28,11 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://azamsafir-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/']
+ALLOWED_HOSTS = ['localhost', 'https://azamsafir-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://azamsafir-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    'https://azamsafir-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
+CSRF_TRUSTED_ORIGINS = [    
+    'https://azamsafir-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
-
 
                         
 REST_FRAMEWORK = {
@@ -60,7 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
 ]
 
 ROOT_URLCONF = 'djangoproj.urls'
