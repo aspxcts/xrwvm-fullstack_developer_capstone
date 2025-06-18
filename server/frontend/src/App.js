@@ -11,8 +11,8 @@ function App() {
       <Route path="/login" element={<LoginPanel />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dealers" element={<Dealers/>} />    
-      <Route path="/dealer/:id" element={<Dealer/>} />
-      <Route path="/postreview/:id" element={<PostReview/>} />
+      <Route path="/dealer/:dealer_id" element={<Dealer/>} />
+      <Route path="/postreview/:dealer_id" element={<PostReview/>} />
     </Routes>
   );
 }
